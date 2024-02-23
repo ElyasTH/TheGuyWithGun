@@ -1,7 +1,7 @@
 ﻿namespace _Project.Gameplay.Shared.Scripts.Utility
 {
-    public class Animations
+    public abstract class Animations
     {
-        
+        public const string Punch = "Punch";
     }
 }
