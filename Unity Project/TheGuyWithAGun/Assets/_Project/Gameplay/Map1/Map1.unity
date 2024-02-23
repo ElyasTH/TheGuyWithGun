@@ -330,6 +330,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   jumpForce: 800
+  dodgeSpeed: 3
+  dodgeDuration: 0.5
+  dodgeCooldown: 1
+  _currentDirection: {x: 0, y: 0}
 --- !u!70 &1496689593
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -772,6 +776,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   jumpForce: 800
+  dodgeSpeed: 12
+  dodgeDuration: 0.5
+  dodgeCooldown: 1
+  _currentDirection: {x: 0, y: 0}
 --- !u!114 &1901668287
 MonoBehaviour:
   m_ObjectHideFlags: 0

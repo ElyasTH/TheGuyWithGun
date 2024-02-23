@@ -9,9 +9,12 @@ public class Damageable : MonoBehaviour
     [SerializeField] private bool addForceOnHit;
     
     private float _currentHealth;
+    private bool _invincible;
     
     public void TakeDamage(float amount)
     {
+        if (_invincible) return;
+        
         _currentHealth -= amount;
         
         //Temp
@@ -32,13 +35,26 @@ public class Damageable : MonoBehaviour
             _currentHealth = maxHealth;
         }
     }
+
+    public void SetInvincible()
+    {
+        _invincible = true;
+    }
+    
+    public void SetVulnerable()
+    {
+        _invincible = false;
+    }
     
     public bool hasForceOnHit()
     {
         return addForceOnHit;
     }
     
-    
+    public bool IsInvincible()
+    {
+        return _invincible;
+    }
     
     //Temp FX
     private SpriteRenderer _spriteRenderer;
