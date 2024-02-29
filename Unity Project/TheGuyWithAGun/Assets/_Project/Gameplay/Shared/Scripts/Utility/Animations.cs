@@ -3,5 +3,6 @@
     public abstract class Animations
     {
         public const string Punch = "Punch";
+        public const string Roll = "Roll";
     }
 }

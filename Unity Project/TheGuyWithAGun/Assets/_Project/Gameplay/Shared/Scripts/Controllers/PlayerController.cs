@@ -10,6 +10,7 @@ namespace _Project.Gameplay.Shared.Scripts.Controllers
         private Damager _damager;
         private Damageable _damageable;
         private CollisionDetector _fistCollisionDetector;
+        private SpriteRenderer _spriteRenderer;
         private Animator _animator;
     
 
@@ -84,6 +85,7 @@ namespace _Project.Gameplay.Shared.Scripts.Controllers
         private void OnDodgeStart()
         {
             _damageable.SetInvincible();
+            _animator.SetTrigger(Animations.Roll);
         }
         
         private void OnDodgeEnd()

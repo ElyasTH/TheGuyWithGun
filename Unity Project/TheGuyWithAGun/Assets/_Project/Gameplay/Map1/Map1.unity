@@ -776,8 +776,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   jumpForce: 800
-  dodgeSpeed: 12
-  dodgeDuration: 0.5
+  dodgeSpeed: 20
+  dodgeDuration: 0.2
   dodgeCooldown: 1
   _currentDirection: {x: 0, y: 0}
 --- !u!114 &1901668287
